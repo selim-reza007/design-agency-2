@@ -1,0 +1,215 @@
+:root {
+    --black-color: #070917;
+    --tomato-color: #DA722C;
+    --light-green-color: #057ADA;
+    --smoky-white-color: #E8F7FB;
+    --dark-green-color: #023047;
+    --light-gray-color: #6F7DFB;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background: lightblue;
+    font-family: 'Poppins', sans-serif;
+}
+
+.wrappar {
+    height: 200px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header .wrappar {
+    background-color: rgb(84, 148, 137);
+}
+
+/* mobile menubar start */
+
+.header .mobile-menu .menu-wrappar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.625rem;
+    background-color: black;
+    color: #fff;
+    margin-top: 0px;
+
+    position: fixed;
+    top: 0;
+    width: 90%;
+
+    transition: all .5s ease;
+    margin-top: 7px;
+}
+
+.header .mobile-menu .menu-wrappar.scroll {
+    padding: 1.563rem;
+    margin-top: 0;
+}
+
+.header .mobile-menu .menu-wrappar p {
+    color: #FFF;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.25rem;
+    font-weight: 900;
+}
+
+.header .mobile-menu .menu-wrappar i {
+    font-size: 2.25rem;
+}
+
+.header .mobile-menu .ul-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    list-style: none;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: var(--black-color);
+    top: 0px;
+    padding-top: 30px;
+    left: -100%;
+    font-size: 1.5rem;
+    z-index: 101;
+    transition: all .5s linear;
+}
+
+.header .mobile-menu .ul-list a {
+    text-decoration: none;
+    display: inline-block;
+    color: #FFF;
+    font-weight: bold;
+}
+
+.header .mobile-menu .ul-list li:first-child {
+    width: 100%;
+    color: #FFF;
+    font-size: 2.18rem;
+    text-align: end;
+    padding-right: 1.5em;
+    margin-bottom: 2.5em;
+}
+
+.header .mobile-menu .ul-list li:last-child {
+    background-color: var(--tomato-color);
+    padding: 0.75em 1.4em;
+    border-radius: 1.5em;
+}
+
+/* mobile menubar end */
+
+/* desktop menubar start*/
+
+.header .desktop-menu {
+    display: none;
+}
+
+
+/* desktop menubar end */
+
+
+
+/* hero */
+
+.hero .wrappar {
+    background-color: violet;
+    height: 350px;
+}
+
+.content .wrappar {
+    background-color: rgb(98, 141, 17);
+    height: 500px;
+}
+
+
+.footer .wrappar {
+    background-color: rgb(34, 83, 122);
+    height: 350px;
+}
+
+@media(min-width: 1050px) {
+    .header .mobile-menu {
+        display: none;
+    }
+
+    .header .desktop-menu {
+        display: inline-block;
+    }
+
+    .header .desktop-menu {
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        width: 90%;
+        max-width: 1200px;
+        top: 10px;
+        padding: 0px 5px;
+        transition: all 0.9s ease;
+    }
+
+    .header .desktop-menu.scroll {
+        background-color: black;
+        padding: 10px 15px;
+        z-index: 100;
+        top: 0;
+    }
+
+    .header .mobile-menu.scroll {
+        background-color: black;
+        padding: 10px 15px;
+        z-index: 100;
+        top: 0;
+    }
+
+    .header .desktop-menu p {
+        color: white;
+        font-size: 25px;
+        font-weight: bolder;
+    }
+
+
+    .header .desktop-menu p span {
+        color: rgb(223, 168, 132);
+    }
+
+    .header .desktop-menu ul {
+        list-style: none;
+        display: flex;
+    }
+
+    .header .desktop-menu ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 10px 20px;
+        background-color: rgb(109, 42, 177);
+        display: inline-block;
+        transition: all .5s linear;
+    }
+
+    .header .desktop-menu ul li:first-child a {
+        border-radius: 10px 0 0 10px;
+    }
+
+    .header .desktop-menu ul li:last-child a {
+        border-radius: 0 10px 10px 0;
+    }
+
+    .header .desktop-menu ul li a:hover {
+        background-color: rgb(140, 93, 187);
+        color: #f1e8e8;
+    }
+
+}
