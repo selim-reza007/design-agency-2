@@ -1,8 +1,8 @@
-const desktopMenu = document.querySelector(".desktop-menu");
+const desktopMenu = document.querySelector(".menu-container");
 const ulList = document.querySelector(".ul-list");
 const mobileMenuwrapper = document.querySelector(".menu-wrappar");
 window.addEventListener("scroll", function () {
-    if(window.scrollY > 60) {
+    if(window.scrollY > 50) {
         desktopMenu.classList.add("scroll");
         mobileMenuwrapper.classList.add("scroll");
     }else {
