@@ -34,7 +34,6 @@ body {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
-
 }
 
 .header {
@@ -359,7 +358,7 @@ body {
 }
 
 .feedback .feedback-bottom .vertiacl-line {
-    height: 550px;
+    height: 575px;
     width: 28px;
     border-radius: 24px;
     background: #023047;
@@ -396,20 +395,6 @@ body {
 }
 
 /* feedback-end */
-/* 
-.content .wrappar {
-    background-color: rgb(98, 141, 17);
-    height: 500px;
-}
-
-
-.footer .wrappar {
-    background-color: rgb(34, 83, 122);
-    height: 350px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-} */
 
 /* our-courses */
 
@@ -438,13 +423,6 @@ body {
     background: #FFF;
 }
 
-/* .our-courses .single-course .single-course-wrappar {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    background-color: red;
-} */
-
 .our-courses .single-course .img-container img {
     max-width: 100%;
     border-radius: 24px;
@@ -459,13 +437,14 @@ body {
     margin: 30px 0;
 }
 
-.our-courses .single-course .text-container h2 {
+.our-courses .single-course .text-container a {
     color: #023047;
     font-family: 'Raleway', sans-serif;
     font-size: 1.5rem;
     font-weight: 900;
     line-height: 150%;
     white-space: pre-line;
+    text-decoration: none;
 }
 
 .our-courses .single-course .text-container p {
@@ -500,7 +479,156 @@ body {
     font-size: 1rem;
 }
 
+.get-our-app {
+    background-color: white;
+    padding-top: 6.25em;
+    padding-bottom: 6.25em;
+}
 
+
+.get-our-app .top-app h2 {
+    color: #023047;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.875rem;
+    font-weight: 900;
+    line-height: 120%;
+}
+
+.get-our-app .top-app p {
+    color: #023047;
+    text-align: center;
+    font-weight: 400;
+    line-height: 200%;
+    margin-top: 0.62em;
+}
+
+.get-our-app .bottom-app {
+    margin-top: 1.06em;
+}
+
+.get-our-app .bottom-app .bottom-app-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.62em;
+    align-items: center;
+
+}
+
+.get-our-app .bottom-app .single-link {
+    background: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 0.88em;
+    padding: 0.75em 1.94em;
+    width: 310px;
+    text-decoration: none;
+}
+
+.get-our-app .bottom-app .single-link h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 200%;
+}
+
+/* our courses end */
+
+/* footer */
+.footer {
+    background: #070917;
+    padding-top: 3.75em;
+    padding-bottom: 4.375em;
+}
+
+.footer .wrappar .link-section {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    row-gap: 2.5em;
+}
+
+.footer .single-link-section .title p {
+    color: #DA722C;
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 200%;
+    margin-bottom: 0.875em;
+}
+
+.footer .single-link-section ul {
+    list-style: none;
+}
+
+.footer .single-link-section ul li {
+    margin-bottom: 0.563em;
+}
+
+.footer .single-link-section ul a,
+.footer .single-link-section.three .other-link-top p {
+    text-decoration: none;
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 200%;
+}
+
+.footer .single-link-section.three .other-link-top .icon-container {
+    margin-top: 1em;
+}
+
+.footer .single-link-section.three .other-link-top .icon-container a i {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.footer .single-link-section.three .other-link-top .icon-container a:first-child i {
+    margin-right: 1em;
+}
+
+.footer .single-link-section.three .other-link-bottom {
+    margin-top: 1.625em;
+}
+
+.footer .single-link-section.three .other-link-bottom input {
+    width: 100%;
+    border-radius: 8px;
+    background: #FFF;
+    /* padding: 0.25em 1.875em; */
+    padding: 0.5em 1.875em;
+    color: #000;
+    font-weight: 400;
+    border: none;
+}
+
+.footer .single-link-section.three .other-link-bottom input:focus {
+    outline: none;
+}
+
+.footer .single-link-section.three .other-link-bottom button {
+    border-radius: 8px;
+    background: #023047;
+    border: none;
+    cursor: pointer;
+    color: #FFF;
+    /* padding: 0.125em 1.75em; */
+    padding: 0.4em 1.75em;
+    font-weight: 400;
+    margin-top: 0.938em;
+}
+
+.footer .wrappar .footer-text {
+    color: #FFF;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 200%;
+    margin-top: 2.5em;
+    text-align: center;
+}
+
+
+/* footer end */
 
 @media(min-width: 450px) {
     .header .header-content .bottom-content img {
@@ -508,7 +636,21 @@ body {
         transform: translateX(10px);
     }
 
+    .feedback .feedback-bottom .single-card-top h2.bg-blue {
+        white-space: pre-line;
+    }
 }
+
+@media(min-width: 578px) {
+    .feedback .feedback-bottom .single-card-top h2.bg-blue {
+        white-space: normal;
+    }
+
+    .feedback .feedback-bottom .vertiacl-line {
+        height: 551 px;
+    }
+}
+
 
 @media(min-width: 720px) {
 
@@ -525,6 +667,11 @@ body {
         transform: translateX(17px);
     }
 
+    .header .header-content .top-content h1 {
+        font-size: 3.125rem;
+    }
+
+
     .our-courses .our-course-wrapper {
         width: 90%;
         max-width: 1200px;
@@ -535,16 +682,40 @@ body {
         font-size: 2.5rem;
     }
 
-    .our-courses .single-course .text-container h2 {
+    .our-courses .single-course .text-container a {
         font-size: 1.875rem;
     }
 
     .our-courses .single-course .text-container p {
         font-size: 1rem;
     }
+
+    .get-our-app .top-app h2 {
+        font-size: 2.5rem;
+    }
+
+    .get-our-app .top-app p {
+        margin-top: 0.313em;
+    }
+
+    .get-our-app .bottom-app {
+        margin-top: 1.688em;
+    }
+
+    .get-our-app .bottom-app .bottom-app-container {
+        flex-direction: row;
+        gap: 1.875rem;
+        width: min-content;
+        margin: 0 auto;
+    }
+
 }
 
 @media(min-width: 820px) {
+
+    .wrappar {
+        width: 80%;
+    }
 
     .header .header-content .bottom-content .card-container {
         transform: translateX(25px);
@@ -553,6 +724,22 @@ body {
     .header .header-content .bottom-content .card .bg {
         height: 93px;
         width: 208px;
+    }
+
+    .header .header-content .bottom-content h3 {
+        font-size: 2.25rem;
+    }
+
+    .header .header-content .bottom-content p {
+        font-size: 1rem;
+    }
+
+    .feedback .feedback-bottom .single-card-bottom .name {
+        font-size: 1.5rem;
+    }
+
+    .feedback .feedback-bottom .single-card-bottom .designation {
+        font-size: 1.125rem;
     }
 
     .header .header-content .bottom-content .card:last-child .bg {
@@ -577,6 +764,52 @@ body {
         transform: translateX(17px);
     }
 
+    .our-courses .single-course {
+        width: 89%;
+        margin: 0 auto;
+    }
+
+    .our-courses .btn-wrapper {
+        width: 89%;
+    }
+
+    .footer .wrappar .link-section {
+        grid-template-columns: 1fr 1fr;
+        text-align: start;
+        row-gap: 2.8em;
+    }
+
+
+    .footer .wrappar .link-section .single-link-section.three {
+        grid-column: span 2;
+    } 
+
+    .footer .single-link-section.three .other-link-bottom form {
+        position: relative;
+    }
+
+    .footer .single-link-section.three .other-link-bottom input {
+        padding-right: 9em;
+        position: absolute;
+    }
+
+
+    .footer .single-link-section.three .other-link-bottom button {
+        position: absolute;
+        top: -11px;
+        /* left: 408px; */
+        right: 3px;
+    }
+
+    .footer .wrappar .link-section .single-link-section ul,
+    .footer .wrappar .link-section .single-link-section.three .other-link {
+        margin-left: 1.5em;
+    }
+
+    .footer .wrappar .footer-text {
+        text-align: start;
+        margin-top: 4em;
+    }
 }
 
 
@@ -597,15 +830,14 @@ body {
         width: 100%;
         top: 10px;
         left: 0;
-        padding: 0px 15px;
+        padding: 0px 25px;
         transition: all 0.9s ease;
     }
 
     .header .desktop-menu .menu-container.scroll {
         background-color: #000;
-        padding: 10px 35px;
         z-index: 100;
-        top: 0;
+        top: 0px;
     }
 
 
@@ -748,7 +980,13 @@ body {
         font-size: 1.125rem;
     }
 
-    
+    .get-our-app .top-app h2 {
+        font-size: 3.75rem;
+    }
+
+    .get-our-app .bottom-app {
+        margin-top: 2.813em;
+    }
 
 }
 
@@ -768,6 +1006,18 @@ body {
 
     .our-courses .single-course .text-container {
         height: 90px;
+    }
+
+    .footer .wrappar .link-section {
+        grid-template-columns: 1fr 1fr 2fr;
+    }
+
+    .footer .wrappar .link-section .single-link-section.three {
+        grid-column: span 1;
+    }
+
+    .footer .wrappar .footer-text {
+        margin-top: 3em;
     }
 
 }
